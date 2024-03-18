@@ -1,0 +1,493 @@
+2024-03-17T16:06:48.992+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] c.c.p.m.MovieappBackendApplication       : Starting MovieappBackendApplication using Java 17.0.10 with PID 9704 (D:\Projects\Capstone-Project\movieapp-backend\target\classes started by Administrator in D:\Projects\Capstone-Project\movieapp-backend)
+2024-03-17T16:06:49.002+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] c.c.p.m.MovieappBackendApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-03-17T16:06:49.116+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-17T16:06:49.117+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-17T16:06:49.975+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-03-17T16:06:50.064+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 2 MongoDB repository interfaces.
+2024-03-17T16:06:50.781+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-03-17T16:06:50.805+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-17T16:06:50.806+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-17T16:06:50.960+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-17T16:06:50.961+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1842 ms
+2024-03-17T16:06:51.247+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.10+7"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@5b29d844, com.mongodb.Jep395RecordCodecProvider@442b87fe, com.mongodb.KotlinCodecProvider@5e08e154]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-03-17T16:06:51.317+05:30  INFO 9704 --- [movieapp-backend] [cluster-ClusterId{value='65f6c7c3268d9e59a18593fb', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=56870700}
+2024-03-17T16:06:51.560+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-17T16:06:52.045+05:30 DEBUG 9704 --- [movieapp-backend] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2024-03-17T16:06:52.130+05:30 DEBUG 9704 --- [movieapp-backend] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-03-17T16:06:52.166+05:30 DEBUG 9704 --- [movieapp-backend] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-03-17T16:06:52.208+05:30 DEBUG 9704 --- [movieapp-backend] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-03-17T16:06:52.326+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2024-03-17T16:06:52.338+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] c.c.p.m.MovieappBackendApplication       : Started MovieappBackendApplication in 3.907 seconds (process running for 4.573)
+2024-03-17T16:07:01.763+05:30  INFO 9704 --- [movieapp-backend] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-17T16:07:01.764+05:30  INFO 9704 --- [movieapp-backend] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-17T16:07:01.765+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-03-17T16:07:01.765+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-03-17T16:07:01.766+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-03-17T16:07:01.767+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@440a146d
+2024-03-17T16:07:01.768+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4dd4c650
+2024-03-17T16:07:01.769+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-03-17T16:07:01.770+05:30  INFO 9704 --- [movieapp-backend] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-03-17T16:07:01.776+05:30 ERROR 9704 --- [movieapp-backend] [http-nio-8082-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Invalid token] with root cause
+
+jakarta.servlet.ServletException: Invalid token
+	at com.capstone.project.movieappbackend.filter.AppFilter.doFilterInternal(AppFilter.java:55) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+
+2024-03-17T16:07:01.810+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2024-03-17T16:07:01.827+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-03-17T16:07:01.976+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-17T16:07:01.981+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Mar 17 16:07:01 IST 2024, status=500, error=Internal Server Error, trace=jakarta.serv (truncated)...]
+2024-03-17T16:07:02.031+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2024-03-17T16:08:12.583+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/user/login", parameters={}
+2024-03-17T16:08:12.585+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.capstone.project.movieappbackend.controller.UserController#validateUser(User)
+2024-03-17T16:08:12.632+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [User(emailId=test@gmail.com, username=test, password=test123, address=Kolkata)]
+2024-03-17T16:08:12.648+05:30  INFO 9704 --- [movieapp-backend] [http-nio-8082-exec-5] c.c.p.m.controller.UserController        : Validating user with emailId: test@gmail.com
+2024-03-17T16:08:12.649+05:30  INFO 9704 --- [movieapp-backend] [http-nio-8082-exec-5] c.c.p.m.services.UserServiceImpl         : Validating user with emailId: test@gmail.com
+2024-03-17T16:08:12.829+05:30  INFO 9704 --- [movieapp-backend] [http-nio-8082-exec-5] c.c.p.m.services.UserServiceImpl         : User with emailId: test@gmail.com validated successfully
+2024-03-17T16:08:12.829+05:30  INFO 9704 --- [movieapp-backend] [http-nio-8082-exec-5] c.c.p.m.controller.UserController        : User with emailId: test@gmail.com validated successfully
+2024-03-17T16:08:12.874+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-03-17T16:08:12.875+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGdtYWlsLmNvbSJ9.Wk3FOE49cZJ9AqrUo9m9ptk8_BMDxaj7kVuQ8ngbbGQ"]
+2024-03-17T16:08:12.878+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-17T16:11:55.534+05:30  INFO 9704 --- [movieapp-backend] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-03-17T16:11:55.655+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] c.c.p.m.MovieappBackendApplication       : Starting MovieappBackendApplication using Java 17.0.10 with PID 9704 (D:\Projects\Capstone-Project\movieapp-backend\target\classes started by Administrator in D:\Projects\Capstone-Project\movieapp-backend)
+2024-03-17T16:11:55.657+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] c.c.p.m.MovieappBackendApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-03-17T16:11:56.070+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-03-17T16:11:56.087+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 2 MongoDB repository interfaces.
+2024-03-17T16:11:56.193+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-03-17T16:11:56.195+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-17T16:11:56.196+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-17T16:11:56.218+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-17T16:11:56.219+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 544 ms
+2024-03-17T16:11:56.252+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.10+7"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@5b29d844, com.mongodb.Jep395RecordCodecProvider@442b87fe, com.mongodb.KotlinCodecProvider@5e08e154]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-03-17T16:11:56.261+05:30  INFO 9704 --- [movieapp-backend] [cluster-ClusterId{value='65f6c8f4268d9e59a18593fc', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3976100}
+2024-03-17T16:11:56.287+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-17T16:11:56.383+05:30 DEBUG 9704 --- [movieapp-backend] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2024-03-17T16:11:56.406+05:30 DEBUG 9704 --- [movieapp-backend] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-03-17T16:11:56.412+05:30 DEBUG 9704 --- [movieapp-backend] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-03-17T16:11:56.417+05:30 DEBUG 9704 --- [movieapp-backend] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-03-17T16:11:56.462+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2024-03-17T16:11:56.467+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] c.c.p.m.MovieappBackendApplication       : Started MovieappBackendApplication in 0.851 seconds (process running for 308.669)
+2024-03-17T16:11:56.470+05:30  INFO 9704 --- [movieapp-backend] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-17T16:12:02.081+05:30  INFO 9704 --- [movieapp-backend] [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-17T16:12:02.081+05:30  INFO 9704 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-17T16:12:02.082+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-03-17T16:12:02.083+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-03-17T16:12:02.083+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-03-17T16:12:02.084+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5ea94323
+2024-03-17T16:12:02.085+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@506eb686
+2024-03-17T16:12:02.085+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-03-17T16:12:02.085+05:30  INFO 9704 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-03-17T16:12:02.106+05:30 ERROR 9704 --- [movieapp-backend] [http-nio-8082-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Invalid token] with root cause
+
+jakarta.servlet.ServletException: Invalid token
+	at com.capstone.project.movieappbackend.filter.AppFilter.doFilterInternal(AppFilter.java:61) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+
+2024-03-17T16:12:02.112+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-03-17T16:12:02.114+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-03-17T16:12:02.116+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-17T16:12:02.118+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Mar 17 16:12:02 IST 2024, status=500, error=Internal Server Error, trace=jakarta.serv (truncated)...]
+2024-03-17T16:12:02.121+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2024-03-17T16:12:29.705+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/user/login", parameters={}
+2024-03-17T16:12:29.706+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.capstone.project.movieappbackend.controller.UserController#validateUser(User)
+2024-03-17T16:12:29.710+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [User(emailId=test@gmail.com, username=test, password=test123, address=Kolkata)]
+2024-03-17T16:12:29.712+05:30  INFO 9704 --- [movieapp-backend] [http-nio-8082-exec-5] c.c.p.m.controller.UserController        : Validating user with emailId: test@gmail.com
+2024-03-17T16:12:29.713+05:30  INFO 9704 --- [movieapp-backend] [http-nio-8082-exec-5] c.c.p.m.services.UserServiceImpl         : Validating user with emailId: test@gmail.com
+2024-03-17T16:12:29.725+05:30  INFO 9704 --- [movieapp-backend] [http-nio-8082-exec-5] c.c.p.m.services.UserServiceImpl         : User with emailId: test@gmail.com validated successfully
+2024-03-17T16:12:29.725+05:30  INFO 9704 --- [movieapp-backend] [http-nio-8082-exec-5] c.c.p.m.controller.UserController        : User with emailId: test@gmail.com validated successfully
+2024-03-17T16:12:29.727+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-03-17T16:12:29.728+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGdtYWlsLmNvbSJ9.Wk3FOE49cZJ9AqrUo9m9ptk8_BMDxaj7kVuQ8ngbbGQ"]
+2024-03-17T16:12:29.729+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-17T16:12:58.918+05:30 ERROR 9704 --- [movieapp-backend] [http-nio-8082-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Invalid token] with root cause
+
+jakarta.servlet.ServletException: Invalid token
+	at com.capstone.project.movieappbackend.filter.AppFilter.doFilterInternal(AppFilter.java:61) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+
+2024-03-17T16:12:58.923+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-03-17T16:12:58.924+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-03-17T16:12:58.926+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-17T16:12:58.927+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Mar 17 16:12:58 IST 2024, status=500, error=Internal Server Error, trace=jakarta.serv (truncated)...]
+2024-03-17T16:12:58.929+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2024-03-17T16:13:59.660+05:30 ERROR 9704 --- [movieapp-backend] [http-nio-8082-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Invalid token] with root cause
+
+jakarta.servlet.ServletException: Invalid token
+	at com.capstone.project.movieappbackend.filter.AppFilter.doFilterInternal(AppFilter.java:61) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+
+2024-03-17T16:13:59.665+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-03-17T16:13:59.666+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-03-17T16:13:59.667+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-17T16:13:59.670+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Mar 17 16:13:59 IST 2024, status=500, error=Internal Server Error, trace=jakarta.serv (truncated)...]
+2024-03-17T16:13:59.674+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2024-03-17T16:15:09.059+05:30 ERROR 9704 --- [movieapp-backend] [http-nio-8082-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Invalid token] with root cause
+
+jakarta.servlet.ServletException: Invalid token
+	at com.capstone.project.movieappbackend.filter.AppFilter.doFilterInternal(AppFilter.java:61) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+
+2024-03-17T16:15:09.064+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-03-17T16:15:09.065+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-03-17T16:15:09.066+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-17T16:15:09.068+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Mar 17 16:15:09 IST 2024, status=500, error=Internal Server Error, trace=jakarta.serv (truncated)...]
+2024-03-17T16:15:09.070+05:30 DEBUG 9704 --- [movieapp-backend] [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2024-03-17T16:17:30.942+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] c.c.p.m.MovieappBackendApplication       : Starting MovieappBackendApplication using Java 17.0.10 with PID 2032 (D:\Projects\Capstone-Project\movieapp-backend\target\classes started by Administrator in D:\Projects\Capstone-Project\movieapp-backend)
+2024-03-17T16:17:30.947+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] c.c.p.m.MovieappBackendApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-03-17T16:17:31.084+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-17T16:17:31.087+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-17T16:17:31.953+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-03-17T16:17:32.024+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 2 MongoDB repository interfaces.
+2024-03-17T16:17:32.715+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-03-17T16:17:32.731+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-17T16:17:32.734+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-17T16:17:32.833+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-17T16:17:32.836+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1748 ms
+2024-03-17T16:17:33.125+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.10+7"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@39188b31, com.mongodb.Jep395RecordCodecProvider@193beb95, com.mongodb.KotlinCodecProvider@daece60]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-03-17T16:17:33.161+05:30  INFO 2032 --- [movieapp-backend] [cluster-ClusterId{value='65f6ca4508192563de0e0c4e', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=31395700}
+2024-03-17T16:17:33.394+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-17T16:17:33.852+05:30 DEBUG 2032 --- [movieapp-backend] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2024-03-17T16:17:33.943+05:30 DEBUG 2032 --- [movieapp-backend] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-03-17T16:17:33.977+05:30 DEBUG 2032 --- [movieapp-backend] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-03-17T16:17:34.015+05:30 DEBUG 2032 --- [movieapp-backend] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-03-17T16:17:34.150+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2024-03-17T16:17:34.162+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] c.c.p.m.MovieappBackendApplication       : Started MovieappBackendApplication in 3.765 seconds (process running for 4.372)
+2024-03-17T16:17:42.094+05:30  INFO 2032 --- [movieapp-backend] [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-17T16:17:42.095+05:30  INFO 2032 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-17T16:17:42.095+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-03-17T16:17:42.096+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-03-17T16:17:42.096+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-03-17T16:17:42.098+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6bd97883
+2024-03-17T16:17:42.099+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4da41c8
+2024-03-17T16:17:42.099+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-03-17T16:17:42.100+05:30  INFO 2032 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-03-17T16:17:42.111+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/user/login", parameters={}
+2024-03-17T16:17:42.126+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.capstone.project.movieappbackend.controller.UserController#validateUser(User)
+2024-03-17T16:17:42.220+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [User(emailId=test@gmail.com, username=test, password=test123, address=Kolkata)]
+2024-03-17T16:17:42.234+05:30  INFO 2032 --- [movieapp-backend] [http-nio-8082-exec-2] c.c.p.m.controller.UserController        : Validating user with emailId: test@gmail.com
+2024-03-17T16:17:42.236+05:30  INFO 2032 --- [movieapp-backend] [http-nio-8082-exec-2] c.c.p.m.services.UserServiceImpl         : Validating user with emailId: test@gmail.com
+2024-03-17T16:17:42.366+05:30  INFO 2032 --- [movieapp-backend] [http-nio-8082-exec-2] c.c.p.m.services.UserServiceImpl         : User with emailId: test@gmail.com validated successfully
+2024-03-17T16:17:42.367+05:30  INFO 2032 --- [movieapp-backend] [http-nio-8082-exec-2] c.c.p.m.controller.UserController        : User with emailId: test@gmail.com validated successfully
+2024-03-17T16:17:42.445+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-03-17T16:17:42.446+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGdtYWlsLmNvbSJ9.Wk3FOE49cZJ9AqrUo9m9ptk8_BMDxaj7kVuQ8ngbbGQ"]
+2024-03-17T16:17:42.467+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-17T16:18:22.565+05:30 ERROR 2032 --- [movieapp-backend] [http-nio-8082-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Invalid token] with root cause
+
+jakarta.servlet.ServletException: Invalid token
+	at com.capstone.project.movieappbackend.filter.AppFilter.doFilterInternal(AppFilter.java:61) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+
+2024-03-17T16:18:22.583+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-03-17T16:18:22.585+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-03-17T16:18:22.590+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-17T16:18:22.592+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Mar 17 16:18:22 IST 2024, status=500, error=Internal Server Error, trace=jakarta.serv (truncated)...]
+2024-03-17T16:18:22.612+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2024-03-17T16:20:45.845+05:30  INFO 2032 --- [movieapp-backend] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-03-17T16:20:45.979+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] c.c.p.m.MovieappBackendApplication       : Starting MovieappBackendApplication using Java 17.0.10 with PID 2032 (D:\Projects\Capstone-Project\movieapp-backend\target\classes started by Administrator in D:\Projects\Capstone-Project\movieapp-backend)
+2024-03-17T16:20:45.982+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] c.c.p.m.MovieappBackendApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-03-17T16:20:46.222+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-03-17T16:20:46.235+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 2 MongoDB repository interfaces.
+2024-03-17T16:20:46.343+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-03-17T16:20:46.349+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-17T16:20:46.351+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-17T16:20:46.389+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-17T16:20:46.391+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 399 ms
+2024-03-17T16:20:46.453+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.10+7"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@39188b31, com.mongodb.Jep395RecordCodecProvider@193beb95, com.mongodb.KotlinCodecProvider@daece60]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-03-17T16:20:46.488+05:30  INFO 2032 --- [movieapp-backend] [cluster-ClusterId{value='65f6cb0608192563de0e0c4f', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=12370400}
+2024-03-17T16:20:46.516+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-17T16:20:46.634+05:30 DEBUG 2032 --- [movieapp-backend] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2024-03-17T16:20:46.662+05:30 DEBUG 2032 --- [movieapp-backend] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-03-17T16:20:46.672+05:30 DEBUG 2032 --- [movieapp-backend] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-03-17T16:20:46.676+05:30 DEBUG 2032 --- [movieapp-backend] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-03-17T16:20:46.726+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2024-03-17T16:20:46.757+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] c.c.p.m.MovieappBackendApplication       : Started MovieappBackendApplication in 0.839 seconds (process running for 196.951)
+2024-03-17T16:20:46.765+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-17T16:20:56.826+05:30  INFO 2032 --- [movieapp-backend] [http-nio-8082-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-17T16:20:56.827+05:30  INFO 2032 --- [movieapp-backend] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-17T16:20:56.827+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-03-17T16:20:56.828+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-03-17T16:20:56.828+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-03-17T16:20:56.829+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@70c5ae3e
+2024-03-17T16:20:56.830+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7e024e56
+2024-03-17T16:20:56.831+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-03-17T16:20:56.831+05:30  INFO 2032 --- [movieapp-backend] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-03-17T16:20:56.833+05:30 ERROR 2032 --- [movieapp-backend] [http-nio-8082-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Invalid token] with root cause
+
+jakarta.servlet.ServletException: Invalid token
+	at com.capstone.project.movieappbackend.filter.AppFilter.doFilterInternal(AppFilter.java:55) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+
+2024-03-17T16:20:56.840+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-03-17T16:20:56.844+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-03-17T16:20:56.847+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-17T16:20:56.848+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Mar 17 16:20:56 IST 2024, status=500, error=Internal Server Error, trace=jakarta.serv (truncated)...]
+2024-03-17T16:20:56.851+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2024-03-17T16:21:14.475+05:30  INFO 2032 --- [movieapp-backend] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-03-17T16:21:14.567+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] c.c.p.m.MovieappBackendApplication       : Starting MovieappBackendApplication using Java 17.0.10 with PID 2032 (D:\Projects\Capstone-Project\movieapp-backend\target\classes started by Administrator in D:\Projects\Capstone-Project\movieapp-backend)
+2024-03-17T16:21:14.569+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] c.c.p.m.MovieappBackendApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-03-17T16:21:14.759+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-03-17T16:21:14.772+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 2 MongoDB repository interfaces.
+2024-03-17T16:21:14.855+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-03-17T16:21:14.857+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-17T16:21:14.858+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-17T16:21:14.877+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-17T16:21:14.878+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 306 ms
+2024-03-17T16:21:14.910+05:30  INFO 2032 --- [movieapp-backend] [cluster-ClusterId{value='65f6cb2208192563de0e0c50', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2555700}
+2024-03-17T16:21:14.900+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.10+7"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@39188b31, com.mongodb.Jep395RecordCodecProvider@193beb95, com.mongodb.KotlinCodecProvider@daece60]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-03-17T16:21:14.927+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-17T16:21:14.995+05:30 DEBUG 2032 --- [movieapp-backend] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2024-03-17T16:21:15.014+05:30 DEBUG 2032 --- [movieapp-backend] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-03-17T16:21:15.019+05:30 DEBUG 2032 --- [movieapp-backend] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-03-17T16:21:15.022+05:30 DEBUG 2032 --- [movieapp-backend] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-03-17T16:21:15.049+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2024-03-17T16:21:15.053+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] c.c.p.m.MovieappBackendApplication       : Started MovieappBackendApplication in 0.514 seconds (process running for 225.246)
+2024-03-17T16:21:15.054+05:30  INFO 2032 --- [movieapp-backend] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-17T16:21:36.397+05:30  INFO 2032 --- [movieapp-backend] [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-17T16:21:36.398+05:30  INFO 2032 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-17T16:21:36.398+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-03-17T16:21:36.399+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-03-17T16:21:36.399+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-03-17T16:21:36.400+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2f884783
+2024-03-17T16:21:36.401+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@214fac02
+2024-03-17T16:21:36.401+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-03-17T16:21:36.402+05:30  INFO 2032 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-03-17T16:21:36.406+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/movies", parameters={}
+2024-03-17T16:21:36.412+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.capstone.project.movieappbackend.controller.MovieController#getMoviesList()
+2024-03-17T16:21:36.419+05:30  INFO 2032 --- [movieapp-backend] [http-nio-8082-exec-2] c.c.p.m.controller.MovieController       : Fetching all movies
+2024-03-17T16:21:36.420+05:30  INFO 2032 --- [movieapp-backend] [http-nio-8082-exec-2] c.c.p.m.services.MovieServiceImpl        : Fetching all movies
+2024-03-17T16:21:36.434+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-17T16:21:36.435+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[]]
+2024-03-17T16:21:36.437+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-17T16:21:47.427+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/movies/top32", parameters={}
+2024-03-17T16:21:47.429+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.capstone.project.movieappbackend.controller.MovieController#getMovieById(String)
+2024-03-17T16:21:47.437+05:30  INFO 2032 --- [movieapp-backend] [http-nio-8082-exec-4] c.c.p.m.controller.MovieController       : Fetching movie with ID: top32
+2024-03-17T16:21:47.440+05:30  INFO 2032 --- [movieapp-backend] [http-nio-8082-exec-4] c.c.p.m.services.MovieServiceImpl        : Fetching movie with ID: top32
+2024-03-17T16:21:47.445+05:30 ERROR 2032 --- [movieapp-backend] [http-nio-8082-exec-4] c.c.p.m.services.MovieServiceImpl        : Movie with ID: top32 not found
+2024-03-17T16:21:47.458+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-17T16:21:47.459+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+2024-03-17T16:21:47.459+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-17T16:21:53.200+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/movies/top32", parameters={}
+2024-03-17T16:21:53.201+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.capstone.project.movieappbackend.controller.MovieController#getMovieById(String)
+2024-03-17T16:21:53.202+05:30  INFO 2032 --- [movieapp-backend] [http-nio-8082-exec-5] c.c.p.m.controller.MovieController       : Fetching movie with ID: top32
+2024-03-17T16:21:53.203+05:30  INFO 2032 --- [movieapp-backend] [http-nio-8082-exec-5] c.c.p.m.services.MovieServiceImpl        : Fetching movie with ID: top32
+2024-03-17T16:21:53.205+05:30 ERROR 2032 --- [movieapp-backend] [http-nio-8082-exec-5] c.c.p.m.services.MovieServiceImpl        : Movie with ID: top32 not found
+2024-03-17T16:21:53.206+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-17T16:21:53.206+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+2024-03-17T16:21:53.207+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-17T16:23:06.811+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/movies/top1", parameters={}
+2024-03-17T16:23:06.812+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.capstone.project.movieappbackend.controller.MovieController#getMovieById(String)
+2024-03-17T16:23:06.812+05:30  INFO 2032 --- [movieapp-backend] [http-nio-8082-exec-7] c.c.p.m.controller.MovieController       : Fetching movie with ID: top1
+2024-03-17T16:23:06.813+05:30  INFO 2032 --- [movieapp-backend] [http-nio-8082-exec-7] c.c.p.m.services.MovieServiceImpl        : Fetching movie with ID: top1
+2024-03-17T16:23:06.815+05:30 ERROR 2032 --- [movieapp-backend] [http-nio-8082-exec-7] c.c.p.m.services.MovieServiceImpl        : Movie with ID: top1 not found
+2024-03-17T16:23:06.815+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-17T16:23:06.815+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+2024-03-17T16:23:06.816+05:30 DEBUG 2032 --- [movieapp-backend] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
